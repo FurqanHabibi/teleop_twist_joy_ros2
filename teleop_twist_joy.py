@@ -1,9 +1,10 @@
 import rclpy
+from rclpy.node import Node
 
 from sensor_msgs.msg import Joy
 from geometry_msgs.msg import Twist
 
-class TeleopTwistJoy(rclpy.Node):
+class TeleopTwistJoy(Node):
 
     def __init__(self):
         super().__init__('teleop_twist_joy')
